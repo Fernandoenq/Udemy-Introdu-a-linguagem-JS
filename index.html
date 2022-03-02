@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site com bootstrap</title>
+
+    <!-- CSS -->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet" ><!-- stylesheet diz que esse é um arquivo folha estilo cascata-->
+    <!--Só de colocar isso ele ja muda a tipografia do seu site-->
+
+</head>
+<body>
+    <p>
+        Olá mundo
+    </p>
+
+    <!-- Tabela normal-->
+    <table border="1">
+        <tr>
+            <th>#</th>
+            <th>Cursos</th>
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <th>Bootstrap</th>
+        </tr>
+        
+        <tr>
+            <th>2</th>
+            <th>HTML</th>
+        </tr>
+    </table>
+
+    <!-- Tabela com um pouco de bootstrap-->
+    <table class="table table-hover table-striped"><!-- table bota bootstrap em ação, table-hover  faz o lance de passar mouse em cima, faz o lance de 
+    revezar as cores das linhas-->
+        <tr>
+            <th>#</th>
+            <th>Cursos</th>
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <th>Bootstrap</th>
+        </tr>
+        
+        <tr>
+            <th>2</th>
+            <th>HTML</th>
+        </tr>
+    </table>
+
+    <!--              Popovers                          -->
+    <div class="container">
+        <h1>Popovers</h1>
+        <button type="button" data-container="body" class="btn btn-primary" data-toggle="popover"  title="Popover title" data-placement="top" data-content="Larga de ser curioso sô">meu popover</button> <!-- Essa class ai ja tem umas config css tipo cor azul e mudar tonalidade
+        ao passar mouse em cima, o data-toggle ali vincula o botao ao popover, o data-content define o texto que vai aparecer no popover-->
+        <button type="button" data-container="body" class="btn btn-primary" data-toggle="popover"  title="Popover title" data-placement="right" data-content="Larga de ser curioso sô">meu popover</button>
+        <button type="button" data-container="body" class="btn btn-primary" data-toggle="popover"  title="Popover title" data-placement="bottom" data-content="Larga de ser curioso sô">meu popover</button>
+        <button type="button" data-container="body" class="btn btn-primary" data-toggle="popover"  title="Popover title" data-placement="left" data-content="Larga de ser curioso sô">meu popover</button>
+        <button type="button" data-container="body" class="btn btn-primary" data-toggle="popover"  title="Popover title" data-content="Larga de ser curioso sô">meu popover</button>
+    
+        <!--         Tooltips                             -->
+
+        <button class="btn btn-success" data-toggle="tooltip" title="tooltip mané">bota o mouse em cima</button>
+    </div>
+    <br>
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+<br>
+
+<br><br>
+<button class="thumb-hearth pop" data-toggle="popover" title="Likes" data-placement="top" data-trigger="focus" data-content="Teste">
+<i class="glyphicon glyphicon-heart"></i>
+</button><br>
+
+
+        <!--            Modals                       -->
+    <div class="container">
+        <button class="btn btn-secundary" data-toggle="modal" data-target="#conteudoModal">Ativar modal</button>
+        <div id="conteudoModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"><!--Div onde fica o titulo-->
+                        <h4>Meu modal</h4>
+                        <button class="close" data-dismiss="modal" aria-label="Fechar"><!--Cria o botao x pra fechar, data-dismiss fecha o modal-->
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div><!--Fecha titulo-->
+                    <!-- Conteudo -->
+                    <div class="modal-body">
+                       <p>Texto do meu modal.</p> 
+                    </div>
+                    <!--Rodapé-->
+                    <div class="modal-footer">
+                        <button class="btn btn-secundary" data-dismiss="modal">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Centralizado-->
+
+        <button class="btn btn-secundary" data-toggle="modal" data-target="#conteudoModal">Ativar modal</button>
+        <div id="conteudoModal" class="modal fade">
+            <div class="modal-dialog modal-dialog-center">
+                <div class="modal-content">
+                    <div class="modal-header"><!--Div onde fica o titulo-->
+                        <h4>Meu modal</h4>
+                        <button class="close" data-dismiss="modal" aria-label="Fechar"><!--Cria o botao x pra fechar, data-dismiss fecha o modal-->
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div><!--Fecha titulo-->
+                    <!-- Conteudo -->
+                    <div class="modal-body">
+                       <p>Texto do meu modal.</p> 
+                    </div>
+                    <!--Rodapé-->
+                    <div class="modal-footer">
+                        <button class="btn btn-secundary" data-dismiss="modal">
+                            Fechar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <!-- JS -->
+        <!--<script src="public/js/jquery.js"></script>
+        <script src="public/js/bootstrap.bundle.min.js"></script>
+        <--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.2/popper.min.js"></script>-->
+
+        <!--Links para pegar o Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+        
+
+
+        
+        <script>
+           $(function(){//função que vamos fazer para iniciar o popover
+            $('[data-toggle="popover"]').popover()// vamos buscar um elemento, no caso o popover criado no site, e iniciar o popover no .popover
+            $('[data-toggle="tooltip"]').tooltip()// Inicia o tootip
+           });
+
+           //$(function () {
+           //  $('data-toggle="popover"').popover({
+           //     container: 'body'
+            //    })
+            //})
+
+           // $(function () {
+             //   $('[data-toggle="popover"]').popover()
+            //})
+
+
+           // $(function () {
+  //$('[data-toggle="popover"]').popover();
+  //$('.pop').popover().click(function() {
+   // setTimeout(function() {
+   //   $('.pop').popover('hide');
+   // }, 1500);
+  //});
+//});
+        </script>
+    </footer>
+</body>
+</html>

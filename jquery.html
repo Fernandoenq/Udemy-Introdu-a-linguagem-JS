@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .green{/*Criado uma classe*/
+            background-color: green;
+        }
+        .reddd{/*coloco a cor vermelha em classes red*/
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Mensagem 1</p>
+    <p>Mensagem 2</p>
+    <button id="azul">azul</button>
+    <button id="vermelho" class="reddd">Vermelho</button> <!-- como tem a classe red ent terá a cor vermelha no inicio-->
+
+    <span id="mensagem"></span>
+
+    <h1 id="textinho">Olá Mundo</h1>
+    <h1>Esse nao muda</h1>
+    <button>Esconder Olá mundo</button>
+
+    <img id="i1" src="trio monstro.jpg" style="width: 200px;">
+    <img id="i2" src="trio irmaos.jpg" style="display: none; width: 200px;"> <!-- O display none é pra esconder as outras, o lance é iniciar apenas com a primeira aparecendo-->
+    <img id="i3" src="quarteto hunter.jpg"style="display: none; width: 200px;">
+    <img id="i4" src="z vs all.jpg"style="display: none; width: 200px;">
+
+    <br>
+
+
+    <a href="#" id="l1">1</a>
+    <a href="#" id="l2">2</a>
+    <a href="#" id="l3">3</a>
+    <a href="#" id="l4">4</a>
+
+
+
+    <footer><!-- É carregado no footer pois caso esteja ruim de carrega a página o Jquery fica por último-->
+        <script src="jquery.js"></script> <!--Contem a biblioteca-->
+        <script src="Script_Jquery.js"></script><!-- Contas os códigos Jquey(Seria um js mais simples)-->
+    </footer>
+    
+</body>
+</html>

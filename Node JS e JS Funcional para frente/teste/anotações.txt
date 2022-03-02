@@ -1,0 +1,9 @@
+mkdir cria pastas
+npm init -y (começa nossos prjeto criando um json)
+nom install express (instala um pacote que permite criar rotas e views pra sua aplicação, meio que permite asseçar o site pelo navegador)
+para executar o site dê no terminal node "nome do arquivo"
+para acessar o site entre em http://localhost:3000/
+para parar o site é ctrl + C
+instale o nodemon para atualizar automático
+npm install -d nodemon
+agora inicie o site com o comando nodemon index.js
